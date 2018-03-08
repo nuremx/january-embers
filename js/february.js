@@ -50,7 +50,7 @@ function createP() {
 
 var draw = function() {
   ctx.fillStyle = '#000'
-  ctx.fillRect(0, 0, 300, 300) // width and height respectevely for the canvas. If canvas size changes, mutate this
+  ctx.fillRect(0, 0, 1920, 1080) // width and height respectevely for the canvas. If canvas size changes, mutate this
 
   for(t = 0; t < particles.length; t++) {
     var p = particles[t]
