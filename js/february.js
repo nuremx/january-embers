@@ -6,14 +6,14 @@ function between(min, max) {
 }
 
 var particles = []
-const quantity = 60
+const quantity = 240
 for (i = 0; i < quantity; i++) {
   particles.push(new createP)
 }
 
 function createP() {
-  this.x = between(0, 500)
-  this.y = between(287, 293)
+  this.x = between(0, 1920) // Mutate this based on screen size. From 0 to X wide resolution
+  this.y = between(1000, 1080) // Mutate this based on screen size. Based on the height resolution
 
   this.size = Math.random() * 2.5
 
@@ -31,8 +31,8 @@ function createP() {
   this.color = colors[Math.floor(Math.random() * colors.length)]
 
   this.reset = function() {
-  this.x = between(0, 500)
-  this.y = between(287, 293)
+  this.x = between(0, 1920) // Mutate this based on screen size. From 0 to X wide resolution
+  this.y = between(1074, 1080) // Mutate this based on screen size. Based on the height resolution
 
   this.size = Math.random() * 2.5;
 
